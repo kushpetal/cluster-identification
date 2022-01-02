@@ -9,7 +9,7 @@ def sf_function(n,k,max_iter):
     Argument max_iter: an integer
     """
     sf_kmeans = KMeans(n_clusters = k, max_iter = max_iter).fit(n)
-    idx = sfKmeans.labels_
+    idx = sf_kmeans.labels_
     cluster_centroids = sf_kmeans.cluster_centers_
 
     all_centroid = np.mean(n,1)
